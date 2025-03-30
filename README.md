@@ -1,7 +1,7 @@
 ## Monad Testnet Tools
 
-## Description
-Welcome to Monad Testnet Tools, a suite of automated scripts designed to interact with the Monad testnet. This software provides various modules to facilitate transactions, token swaps, and NFT minting, all with configurable settings to suit your needs.
+### Description
+Welcome to Monad Testnet Tools, a suite of automated scripts designed to interact with the Monad testnet. This software provides various modules to facilitate transactions, token swaps, and NFT minting, bridging, liquidity management, and contract deployments. all with configurable settings to suit your needs.
 
 ### Setup Instructions:
 -  Python `3.7 or higher` (recommended 3.9 or 3.10 due to asyncio usage).
@@ -9,21 +9,41 @@ Welcome to Monad Testnet Tools, a suite of automated scripts designed to interac
 -  pip (Python package installer)
 
 ### Features
-- Automated Wallet Management - Process multiple wallets efficiently with configurable pauses.
 
-- Token Transactions - Withdraw from OKX, swap MON, and manage conversions.
+-  Proxy Support: Supports both mobile and regular proxies.
 
-- Randomized & Bulk Swaps - Swap MON into random tokens or convert everything back to MON.
+-  GWEI Management: Allows setting a maximum GWEI limit for transactions.
 
-- NFT Minting - Automate the minting of various NFTs.
+-  Wallet Handling: Shuffle wallets and configure pauses between operations.
 
-- Customizable Retries & Pauses - Adjust execution timing and retry logic.
+-  Token Swaps: Supports BEAN Exchange and Bebop Swap.
 
-- Database Management - Track wallet statistics and transactions.
+-  Liquidity Management: Deposit and withdraw from https://stake.apr.io/.
+
+-  Minting NFTs & Domains: Supports various NFT projects.
+
+-  Bridging: Bridge assets from ARB/OP to Sepolia.
+
+-  OKX Withdrawal: Configurable withdrawal settings from OKX exchange.
+
+-  Gas Refueling: Refill gas from multiple chains.
 
 ### Configuration
+All settings are in config.py. Key options include:
 
-#### All settings are in config.py. Key options include:
+#### General Settings
+```yaml
+MOBILE_PROXY = False  # True - mobile proxy / False - regular proxy
+ROTATE_IP = False  # Setup for mobile proxy only
+CHECK_GWEI = False
+MAX_GWEI = 20
+SLIPPAGE = 0.03
+
+MONAD_TESTNET_RPC = 'https://testnet-rpc.monad.xyz'
+TG_BOT_TOKEN = ''
+TG_USER_ID = None
+CAPSOLVER_API = ''
+```
 
 #### Execution Controls
 
@@ -64,21 +84,29 @@ Welcome to Monad Testnet Tools, a suite of automated scripts designed to interac
 ### Usage
 #### Installation and startup
 
-1. Install the dependencies:
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/FckTestnet/the-monad-testnet.git
+   ```
+2. Navigate into the project directory:
+   ```bash
+   cd monad-testnet-bot
+   ```
+3. Install the dependencies:
    ```bash
    pip install -r requirements.txt
    ```
-2. Add your Private Key on `wallets.txt`
+4. Add your Private Key on `wallets.txt`
    ```json
    your_private_key
    your_private_key
    ```
-4. Add your Proxies on `proxies.txt`
+5. Add your Proxies on `proxies.txt`
    ```yaml
    http://login:pass@ip:port
    http://login:pass@ip:port
    ```
-2. Run (first module, then second module):
+6. Run (first module, then second module):
    ```bash
     python main.py
    ```
