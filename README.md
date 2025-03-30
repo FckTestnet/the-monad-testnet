@@ -4,8 +4,9 @@
 Welcome to Monad Testnet Tools, a suite of automated scripts designed to interact with the Monad testnet. This software provides various modules to facilitate transactions, token swaps, and NFT minting, all with configurable settings to suit your needs.
 
 ### Setup Instructions:
-Python `3.7 or higher` (recommended 3.9 or 3.10 due to asyncio usage).
-pip (Python package installer)
+-  Python `3.7 or higher` (recommended 3.9 or 3.10 due to asyncio usage).
+
+-  pip (Python package installer)
 
 ### Features
 - Automated Wallet Management - Process multiple wallets efficiently with configurable pauses.
@@ -26,33 +27,33 @@ pip (Python package installer)
 
 #### Execution Controls
 
-`PAUSE_BETWEEN_WALLETS` - Delay between processing wallets.
+-  `PAUSE_BETWEEN_WALLETS` - Delay between processing wallets.
 
-`PAUSE_BETWEEN_MODULES` - Delay between module execution.
+-  `PAUSE_BETWEEN_MODULES` - Delay between module execution.
 
-`RETRIES` - Number of retry attempts.
+-  `RETRIES` - Number of retry attempts.
 
-`PAUSE_BETWEEN_RETRIES` - Delay before retrying failed actions.
+-  `PAUSE_BETWEEN_RETRIES` - Delay before retrying failed actions.
 
 #### Modules
 
-`OKX_WITHDRAW + GAZ_ZIP_TO_MON` - Buy MON for ETH from selected networks.
+-  `OKX_WITHDRAW + GAZ_ZIP_TO_MON` - Buy MON for ETH from selected networks.
 
-`RANDOM_SWAPS` - Swap MON into random tokens based on RandomSwapsSettings.
+-  `RANDOM_SWAPS` - Swap MON into random tokens based on RandomSwapsSettings.
 
-`SWAP_ALL_TO_MON` - Convert all tokens to MON.
+-  `SWAP_ALL_TO_MON` - Convert all tokens to MON.
 
-`MINTS` - Automate NFT minting.
+-  `MINTS` - Automate NFT minting.
 
-`DEPLOY_CONTRACT` - Deploy smart contracts if needed.
+-  `DEPLOY_CONTRACT` - Deploy smart contracts if needed.
 
 #### Additional Settings
 
-`Proxy Support` - Mobile and regular proxy options (MOBILE_PROXY, ROTATE_IP).
+-  `Proxy Support` - Mobile and regular proxy options (MOBILE_PROXY, ROTATE_IP).
 
-`Gwei Control` - Check gas fees before executing transactions (CHECK_GWEI, MAX_GWEI).
+-  `Gwei Control` - Check gas fees before executing transactions (CHECK_GWEI, MAX_GWEI).
 
-`Liquidity & Staking` - Support for deposits and withdrawals (ARR_IO_DEPOSIT, APR_IO_WITHDRAW).
+-  `Liquidity & Staking` - Support for deposits and withdrawals (ARR_IO_DEPOSIT, APR_IO_WITHDRAW).
 
 #### Staking & Liquidity
 
