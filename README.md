@@ -9,6 +9,13 @@ Welcome to Monad Testnet Tools, a suite of automated scripts designed to interac
 -  pip (Python package installer)
 
 ### Features
+-  Faucet: Support auto claiming `official faucet`
+
+-  Captcha Solver: Completing `captcha` for faucet and galxe
+
+-  Notification: Get any `notification` for action on `telegram`
+
+-  Contract Deployment: Support contract `deployment` configurable
 
 -  Proxy Support: Supports both mobile and regular proxies.
 
