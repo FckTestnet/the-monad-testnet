@@ -12,24 +12,24 @@ Welcome to Monad Testnet Tools, a suite of automated scripts designed to interac
 
 -  Proxy Support: Supports both mobile and regular proxies.
 
--  GWEI Management: Allows setting a maximum GWEI limit for transactions.
+-  GWEI Management: Allows setting a maximum `GWEI limit` for transactions.
 
--  Wallet Handling: Shuffle wallets and configure pauses between operations.
+-  Wallet Handling: `Shuffle` wallets and `configure` pauses between operations.
 
--  Token Swaps: Supports BEAN Exchange and Bebop Swap.
+-  Token Swaps: Supports `BEAN Exchange` and `Bebop Swap`.
 
--  Liquidity Management: Deposit and withdraw from https://stake.apr.io/.
+-  Liquidity Management: `Deposit` and `withdraw` from `https://stake.apr.io/`.
 
--  Minting NFTs & Domains: Supports various NFT projects.
+-  Minting NFTs & Domains: Supports various `NFT` projects.
 
--  Bridging: Bridge assets from ARB/OP to Sepolia.
+-  Bridging: Bridge assets from `ARB/OP` to Sepolia.
 
--  OKX Withdrawal: Configurable withdrawal settings from OKX exchange.
+-  OKX Withdrawal: Configurable `withdrawal settings` from `OKX exchange`.
 
 -  Gas Refueling: Refill gas from multiple chains.
 
 ### Configuration
-All settings are in config.py. Key options include:
+All settings are in `config.py`. Key options include:
 
 #### General Settings
 ```yaml
