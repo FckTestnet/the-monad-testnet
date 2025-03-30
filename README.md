@@ -45,6 +45,46 @@ TG_USER_ID = None
 CAPSOLVER_API = ''
 ```
 
+#### Wallet Handling
+```yaml
+SHUFFLE_WALLETS = False
+PAUSE_BETWEEN_WALLETS = [10, 25]
+PAUSE_BETWEEN_MODULES = [10, 20]
+PAUSE_BETWEEN_CYCLES = [3600, 3600]
+RETRIES = 3
+PAUSE_BETWEEN_RETRIES = 15
+```
+
+#### Token Swap Settings
+```yaml
+class BEANSwapSettings:
+    from_token = ['MON']  # Supported: MON, USDC
+    to_token = ['USDC']
+    amount = 0.1
+    use_percentage = True
+    swap_percentage = [0.2, 0.3]
+    swap_all_balance = False
+
+class BebopSwapSettings:
+    from_token = ['USDC']
+    to_token = ['MON']
+    amount = 0.1
+    use_percentage = False
+    swap_percentage = [0.1, 0.1]
+    swap_all_balance = True
+```
+
+#### Bridging Settings
+```yaml
+class TestnetBridgeConfig:
+    from_chain = 'OP'
+    to_chain = 'SEPOLIA'
+    amount = 0.1
+    use_percentage = True
+    bridge_percentage = [0.1, 0.2]
+    min_mon_balance = 10
+```
+
 #### Execution Controls
 
 -  `PAUSE_BETWEEN_WALLETS` - Delay between processing wallets.
