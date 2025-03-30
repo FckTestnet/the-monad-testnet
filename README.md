@@ -130,7 +130,7 @@ class TestnetBridgeConfig:
    ```
 2. Navigate into the project directory:
    ```bash
-   cd monad-testnet-bot
+   cd the-monad-testnet
    ```
 3. Install the dependencies:
    ```bash
