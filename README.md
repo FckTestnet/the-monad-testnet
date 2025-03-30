@@ -3,11 +3,11 @@
 ## Description
 Welcome to Monad Testnet Tools, a suite of automated scripts designed to interact with the Monad testnet. This software provides various modules to facilitate transactions, token swaps, and NFT minting, all with configurable settings to suit your needs.
 
-## Setup Instructions:
+### Setup Instructions:
 Python `3.7 or higher` (recommended 3.9 or 3.10 due to asyncio usage).
 pip (Python package installer)
 
-## Features
+### Features
 - Automated Wallet Management - Process multiple wallets efficiently with configurable pauses.
 
 - Token Transactions - Withdraw from OKX, swap MON, and manage conversions.
@@ -20,11 +20,11 @@ pip (Python package installer)
 
 - Database Management - Track wallet statistics and transactions.
 
-## Configuration
+### Configuration
 
-### All settings are in config.py. Key options include:
+#### All settings are in config.py. Key options include:
 
-### Execution Controls
+#### Execution Controls
 
 `PAUSE_BETWEEN_WALLETS` - Delay between processing wallets.
 
@@ -34,7 +34,7 @@ pip (Python package installer)
 
 `PAUSE_BETWEEN_RETRIES` - Delay before retrying failed actions.
 
-### Modules
+#### Modules
 
 `OKX_WITHDRAW + GAZ_ZIP_TO_MON` - Buy MON for ETH from selected networks.
 
@@ -46,7 +46,7 @@ pip (Python package installer)
 
 `DEPLOY_CONTRACT` - Deploy smart contracts if needed.
 
-### Additional Settings
+#### Additional Settings
 
 `Proxy Support` - Mobile and regular proxy options (MOBILE_PROXY, ROTATE_IP).
 
@@ -54,14 +54,14 @@ pip (Python package installer)
 
 `Liquidity & Staking` - Support for deposits and withdrawals (ARR_IO_DEPOSIT, APR_IO_WITHDRAW).
 
-### Staking & Liquidity
+#### Staking & Liquidity
 
 - Kitsu, Apriori, Magma Staking - Stake, unstake, and claim MON rewards with configurable cycles.
 
 -  Bebop & Izumi Wrap/Unwrap - Convert MON to WMON and vice
 
-## Usage
-### Installation and startup
+### Usage
+#### Installation and startup
 
 1. Install the dependencies:
    ```bash
@@ -86,10 +86,10 @@ pip (Python package installer)
 2) `Work with existing database` - work with database
 3) `Check stats` - check wallet stats
 
-## Contributing
+### Contributing
 
 Submit pull requests or report issues. Ensure your code follows best practices.
 
-## License
+### License
 
 This project is open-source—modify and distribute as needed.
