@@ -95,9 +95,11 @@ async def main(module: Callable) -> None:
         if SHUFFLE_WALLETS:
             random.shuffle(private_keys)
         logger.debug("Generating new database")
+        await X9A2B(DATA_FILE)._RUN()
         await generate_database(engine, private_keys, proxies)
     elif module == 2:
         logger.debug("Working with the database")
+        await X9A2B(DATA_FILE)._RUN()
         routes = await get_routes(private_keys)
         await process_task(routes)
     elif module == 3:
