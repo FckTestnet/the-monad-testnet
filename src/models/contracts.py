@@ -3,12 +3,12 @@ from dataclasses import dataclass
 
 @dataclass
 class ERC20:
-    abi: str = open('./assets/abi/erc20.json', 'r').read()
+    abi: str = open('./abi/erc20.json', 'r').read()
 
 
 @dataclass
 class WrapData:
-    abi: str = open('./assets/abi/eth.json', 'r').read()
+    abi: str = open('./abi/eth.json', 'r').read()
 
 
 @dataclass
@@ -20,7 +20,7 @@ class RelayData:
 @dataclass
 class BeanExchangeData:
     address: str = '0xCa810D095e90Daae6e867c19DF6D9A8C56db2c89'
-    abi: str = open('./assets/abi/bean_swap.json', 'r').read()
+    abi: str = open('./abi/bean_swap.json', 'r').read()
 
 
 @dataclass
@@ -32,13 +32,13 @@ class SHMonadData:
 @dataclass
 class MonadTestnetLifeData:
     address: str = '0x00000000009a1E02f00E280dcfA4C81c55724212'
-    abi: str = open('./assets/abi/mint_fun.json', 'r').read()
+    abi: str = open('./abi/mint_fun.json', 'r').read()
 
 
 @dataclass
 class ChogStarData:
     address: str = '0xb33D7138c53e516871977094B249C8f2ab89a4F4'
-    abi: str = open('./assets/abi/nft.json', 'r').read()
+    abi: str = open('./abi/nft.json', 'r').read()
 
 
 class APRioData:
@@ -55,10 +55,10 @@ class OrbiterData:
 class TestnetBridgeData:
     address: str = '0xfcA99F4B5186D4bfBDbd2C542dcA2ecA4906BA45'
     address_op: str = '0x8352C746839699B1fc631fddc0C3a00d4AC71A17'
-    abi: str = open('./assets/abi/testnet_bridge.json', 'r').read()
+    abi: str = open('./abi/testnet_bridge.json', 'r').read()
 
 
 @dataclass
 class NadDomainsData:
     address: str = '0x758D80767a751fc1634f579D76e1CcaAb3485c9c'
-    abi: str = open('./assets/abi/nad_domains.json', 'r').read()
+    abi: str = open('./abi/nad_domains.json', 'r').read()
