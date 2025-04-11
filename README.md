@@ -112,7 +112,7 @@ class TestnetBridgeConfig:
 
 -  `MINTS` - Automate NFT minting.
 
--  `DEPLOY_CONTRACT` - Deploy smart contracts if needed.
+-  `DEPLOY_CONTRACT` - Deploy smart contracts (if needed).
 
 #### Additional Settings
 
