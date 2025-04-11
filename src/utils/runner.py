@@ -112,7 +112,6 @@ async def process_wrapper(route: Route) -> Optional[bool]:
     if wrapped:
         return True
 
-
 async def process_swap(
         route: Route,
         config_class: Any,
@@ -140,13 +139,11 @@ async def process_swap(
     if swapped:
         return True
 
-
 def create_process_swap_function(config_class: Any, swap_class: type[ABCSwap]) -> Callable:
     async def process(route: Route) -> None:
         return await process_swap(route, config_class, swap_class)
 
     return process
-
 
 async def process_swap_all_to_eth(route: Route) -> Optional[bool]:
     token_list = [token for token in tokens.get('MONAD', {}).keys() if token != 'MON']
@@ -208,7 +205,6 @@ async def process_swap_all_to_eth(route: Route) -> Optional[bool]:
                 continue
 
     return True
-
 
 async def process_check_stats(private_keys):
     checker = MonadChecker()
