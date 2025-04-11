@@ -90,7 +90,6 @@ async def process_route(route: Route) -> None:
 
 async def main(module: Callable) -> None:
     await init_models(engine)
-    # new_proxies = await filter_and_update_proxies(proxies)
     if module == 1:
         if SHUFFLE_WALLETS:
             random.shuffle(private_keys)
