@@ -32,7 +32,6 @@ async def check_proxy(proxy: str, semaphore: Semaphore) -> bool:
             pass
         return False
 
-
 async def filter_and_update_proxies(proxies: list[str], max_concurrent_tasks: int = 50) -> list[str]:
     semaphore = Semaphore(max_concurrent_tasks)
     tasks = [check_proxy(proxy, semaphore) for proxy in proxies]

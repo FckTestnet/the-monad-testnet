@@ -8,7 +8,6 @@ class Chain:
         self.scan = scan
         self.native_token = native_token
 
-
 MONAD = Chain(
     chain_id=10143,
     rpc=MONAD_TESTNET_RPC,

@@ -6,7 +6,6 @@ from src.database.base_models.pydantic_manager import DataBaseManagerConfig
 from src.database.utils.db_manager import DataBaseUtils
 from src.models.route import Route, Wallet
 
-
 async def get_routes(private_keys: str) -> Optional[List[Route]]:
     db_utils = DataBaseUtils(
         manager_config=DataBaseManagerConfig(
