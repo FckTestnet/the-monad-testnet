@@ -8,7 +8,6 @@ from aiohttp_socks import ProxyConnector
 from src.utils.data.helper import proxies
 from src.utils.proxy_manager import Proxy
 
-
 class RequestClient:
     def __init__(self, proxy: Proxy | None):
         self.session = None

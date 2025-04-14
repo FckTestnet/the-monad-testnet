@@ -19,7 +19,6 @@ with open('proxies.txt', 'r', encoding='utf-8-sig') as file:
 print(Fore.BLUE + f'Loaded {len(private_keys)} wallets:')
 print('\033[39m')
 
-
 async def check_proxy(proxy: str, semaphore: Semaphore) -> bool:
     test_url = "https://lisk.drpc.org"
     async with semaphore:

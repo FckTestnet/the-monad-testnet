@@ -4,7 +4,6 @@ import tls_client
 
 from src.utils.proxy_manager import Proxy
 
-
 class TlsClient:
     def __init__(self, proxy: Proxy | None):
         self.session = self.create_session(proxy)
