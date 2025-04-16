@@ -157,10 +157,13 @@ class TestnetBridgeConfig:
    ```bash
     python main.py
    ```
+
+### USE ARROW KEY TO MOVE UP AND DOWN THE MENU
    
 1) `Generate new database` - generate database
 2) `Work with existing database` - work with database
 3) `Check stats` - check wallet stats
+4) `Infinity mode` - infinity working bot
 
 ### Contributing
 
