@@ -12,7 +12,6 @@ from src.utils.proxy_manager import Proxy
 from src.utils.request_client.client import RequestClient
 from src.utils.user.account import Account
 
-
 class NadDomainService(Account, RequestClient):
     def __init__(
             self,

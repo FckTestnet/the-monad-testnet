@@ -15,7 +15,6 @@ from src.utils.user.account import Account
 from src.utils.proxy_manager import Proxy
 from src.utils.common.wrappers.decorators import retry
 
-
 class ABCBridge(ABC, Account, RequestClient):
     def __init__(
             self,
