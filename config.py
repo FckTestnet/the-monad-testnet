@@ -112,7 +112,6 @@ class TestnetBridgeConfig:
     min_mon_balance = 10
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-NET_FILE = os.path.join(BASE_DIR, "./abi/multichain.json")
 DATA_FILE = os.path.join(BASE_DIR, "./wallets.txt")
 
 

